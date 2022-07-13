@@ -1,0 +1,51 @@
+.button {
+  display: block;
+  max-width: 178px;
+  padding: 14px 43px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  color: $btn-text-color;
+  background-color: $subtitle-color;
+  border-radius: 5px;
+}
+
+.hero__button {
+  max-width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  @media screen and (min-width: 575px) {
+    max-width: 305px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0px auto;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 767px) {
+    max-width: 236px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin: 0px;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 292px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1400px) {
+    max-width: 438px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 36px;
+  }
+}
+
+.skills__button {
+  margin-top: auto;
+}

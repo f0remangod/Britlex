@@ -1,0 +1,16 @@
+body {
+  font-family: $font;
+  color: $main-color;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}

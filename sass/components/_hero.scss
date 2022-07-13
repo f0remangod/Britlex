@@ -1,0 +1,112 @@
+.hero__title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: $title-color;
+  @media screen and (min-width: 575px) {
+    margin-bottom: 26px;
+    font-size: 34px;
+    line-height: 1.32;
+  }
+  @media screen and (min-width: 767px) {
+    margin-bottom: 25px;
+    max-width: 300px;
+    text-align: left;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 992px) {
+    margin-bottom: 27px;
+    font-size: 48px;
+    line-height: 1.33;
+  }
+  @media screen and (min-width: 1400px) {
+    min-width: 450px;
+    margin-bottom: 40px;
+    font-size: 64px;
+    line-height: 1.25;
+  }
+}
+
+.hero__text {
+  text-align: center;
+  margin-bottom: 35px;
+  @media screen and (min-width: 575px) {
+    font-size: 16px;
+    margin-bottom: 37px;
+  }
+  @media screen and (min-width: 767px) {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  @media screen and (min-width: 992px) {
+    margin-bottom: 33px;
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1400px) {
+    margin-bottom: 61px;
+    font-size: 24px;
+  }
+}
+
+.hero__image {
+  display: block;
+  margin: 0px auto 16px;
+  @media screen and (min-width: 575px) {
+    margin: 0px auto 17px;
+    width: 424px;
+    height: 424px;
+  }
+  @media screen and (min-width: 767px) {
+    margin: 0px;
+    width: 352px;
+    height: 352px;
+    flex-shrink: 0;
+  }
+  @media screen and (min-width: 992px) {
+    width: 460px;
+    height: 460px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 661px;
+    height: 661px;
+  }
+}
+
+.hero__container {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+
+.hero__wrapper {
+  @media screen and (min-width: 767px) {
+    max-width: 333px;
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 417px;
+  }
+  @media screen and (min-width: 1400px) {
+    max-width: 500px;
+  }
+}
+
+.hero {
+  margin-bottom: 45px;
+  @media screen and (min-width: 575px) {
+    margin-bottom: 70px;
+  }
+  @media screen and (min-width: 767px) {
+    margin-bottom: 56px;
+  }
+  @media screen and (min-width: 992px) {
+    margin-bottom: 47px;
+  }
+  @media screen and (min-width: 1400px) {
+    margin-bottom: 103px;
+  }
+}
