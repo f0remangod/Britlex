@@ -71,9 +71,43 @@
     <main>
       <section class="section hero">
         <div class="container hero__container">
-          <svg class="hero__image" width="213" height="213">
-            <use href="./images/sprite.svg#icon-hero"></use>
-          </svg>
+          <picture>
+            <source
+              srcset="
+                ./images/hero/hero320@1x.png 1x,
+                ./images/hero/hero320@2x.png 2x
+              "
+              media="(max-width:574px)" />
+            <source
+              srcset="
+                ./images/hero/hero575@1x.png 1x,
+                ./images/hero/hero575@2x.png 2x
+              "
+              media="(min-width:575px) and  (max-width:766px)" />
+            <source
+              srcset="
+                ./images/hero/hero767@1x.png 1x,
+                ./images/hero/hero767@2x.png 2x
+              "
+              media="(min-width:767px) and  (max-width:991px)" />
+            <source
+              srcset="
+                ./images/hero/hero992@1x.png 1x,
+                ./images/hero/hero992@2x.png 2x
+              "
+              media="(min-width:992px) and  (max-width:1399px)" />
+            <source
+              srcset="
+                ./images/hero/hero1400@1x.png 1x,
+                ./images/hero/hero1400@2x.png 2x
+              "
+              media="(min-width:1400px)" />
+            <img
+              class="hero__image"
+              src="./images/hero/hero1400@1x.png"
+              alt="Hero image"
+          /></picture>
+
           <div class="hero__wrapper">
             <h1 class="hero__title">Learn Any Foreign Language</h1>
             <p class="hero__text">
@@ -89,9 +123,43 @@
           <h2 class="title">Skills</h2>
           <ul class="skills__items">
             <li class="skills__item">
-              <svg class="skills__image" width="213" height="213">
-                <use href="./images/sprite.svg#icon-skill1"></use>
-              </svg>
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/skill1/skill1-320@1x.png 1x,
+                    ./images/skills/skill1/skill1-320@2x.png 2x
+                  "
+                  media="(max-width:574px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill1/skill1-575@1x.png 1x,
+                    ./images/skills/skill1/skill1-575@2x.png 2x
+                  "
+                  media="(min-width:575px) and  (max-width:766px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill1/skill1-767@1x.png 1x,
+                    ./images/skills/skill1/skill1-767@2x.png 2x
+                  "
+                  media="(min-width:767px) and  (max-width:991px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill1/skill1-992@1x.png 1x,
+                    ./images/skills/skill1/skill1-992@2x.png 2x
+                  "
+                  media="(min-width:992px) and  (max-width:1399px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill1/skill1-1400@1x.png 1x,
+                    ./images/skills/skill1/skill1-1400@2x.png 2x
+                  "
+                  media="(min-width:1400px)" />
+                <img
+                  class="skills__image"
+                  src="./images/skills/skill1/skill1-1400@1x.png"
+                  alt="Speaking"
+              /></picture>
+
               <div class="skills__wrapper">
                 <h3 class="skills__title">Speaking</h3>
                 <p class="skills__text">
@@ -110,9 +178,42 @@
             </li>
 
             <li class="skills__item">
-              <svg class="skills__image" width="213" height="213">
-                <use href="./images/sprite.svg#icon-skill2"></use>
-              </svg>
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/skill2/skill2-320@1x.png 1x,
+                    ./images/skills/skill2/skill2-320@2x.png 2x
+                  "
+                  media="(max-width:574px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill2/skill2-575@1x.png 1x,
+                    ./images/skills/skill2/skill2-575@2x.png 2x
+                  "
+                  media="(min-width:575px) and  (max-width:766px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill2/skill2-767@1x.png 1x,
+                    ./images/skills/skill2/skill2-767@2x.png 2x
+                  "
+                  media="(min-width:767px) and  (max-width:991px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill2/skill2-992@1x.png 1x,
+                    ./images/skills/skill2/skill2-992@2x.png 2x
+                  "
+                  media="(min-width:992px) and  (max-width:1399px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill2/skill2-1400@1x.png 1x,
+                    ./images/skills/skill2/skill2-1400@2x.png 2x
+                  "
+                  media="(min-width:1400px)" />
+                <img
+                  class="skills__image"
+                  src="./images/skills/skill2/skill2-1400@1x.png"
+                  alt="Writing"
+              /></picture>
               <div class="skills__wrapper">
                 <h3 class="skills__title">Writing</h3>
                 <p class="skills__text">
@@ -125,9 +226,42 @@
             </li>
 
             <li class="skills__item">
-              <svg class="skills__image" width="213" height="213">
-                <use href="./images/sprite.svg#icon-skill3"></use>
-              </svg>
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/skill3/skill3-320@1x.png 1x,
+                    ./images/skills/skill3/skill3-320@2x.png 2x
+                  "
+                  media="(max-width:574px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill3/skill3-575@1x.png 1x,
+                    ./images/skills/skill3/skill3-575@2x.png 2x
+                  "
+                  media="(min-width:575px) and  (max-width:766px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill3/skill3-767@1x.png 1x,
+                    ./images/skills/skill3/skill3-767@2x.png 2x
+                  "
+                  media="(min-width:767px) and  (max-width:991px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill3/skill3-992@1x.png 1x,
+                    ./images/skills/skill3/skill3-992@2x.png 2x
+                  "
+                  media="(min-width:992px) and  (max-width:1399px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill3/skill3-1400@1x.png 1x,
+                    ./images/skills/skill3/skill3-1400@2x.png 2x
+                  "
+                  media="(min-width:1400px)" />
+                <img
+                  class="skills__image"
+                  src="./images/skills/skill3/skill3-1400@1x.png"
+                  alt="Reading"
+              /></picture>
               <div class="skills__wrapper">
                 <h3 class="skills__title">Reading</h3>
                 <p class="skills__text">
@@ -139,9 +273,42 @@
             </li>
 
             <li class="skills__item">
-              <svg class="skills__image" width="213" height="213">
-                <use href="./images/sprite.svg#icon-skill4"></use>
-              </svg>
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/skill4/skill4-320@1x.png 1x,
+                    ./images/skills/skill4/skill4-320@2x.png 2x
+                  "
+                  media="(max-width:574px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill4/skill4-575@1x.png 1x,
+                    ./images/skills/skill4/skill4-575@2x.png 2x
+                  "
+                  media="(min-width:575px) and  (max-width:766px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill4/skill4-767@1x.png 1x,
+                    ./images/skills/skill4/skill4-767@2x.png 2x
+                  "
+                  media="(min-width:767px) and  (max-width:991px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill4/skill4-992@1x.png 1x,
+                    ./images/skills/skill4/skill4-992@2x.png 2x
+                  "
+                  media="(min-width:992px) and  (max-width:1399px)" />
+                <source
+                  srcset="
+                    ./images/skills/skill4/skill4-1400@1x.png 1x,
+                    ./images/skills/skill4/skill4-1400@2x.png 2x
+                  "
+                  media="(min-width:1400px)" />
+                <img
+                  class="skills__image"
+                  src="./images/skills/skill4/skill4-1400@1x.png"
+                  alt="Listening"
+              /></picture>
               <div class="skills__wrapper">
                 <h3 class="skills__title">Listening</h3>
                 <p class="skills__text">
@@ -150,6 +317,69 @@
                 </p>
                 <a href="$" class="button skills__button">Learn more</a>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section about">
+        <div class="container about__container">
+          <h2 class="title about__title">About Us</h2>
+          <picture>
+            <source
+              srcset="
+                ./images/about/about-320@1x.png 1x,
+                ./images/about/about-320@2x.png 2x
+              "
+              media="(max-width:574px)" />
+            <source
+              srcset="
+                ./images/about/about-575@1x.png 1x,
+                ./images/about/about-575@2x.png 2x
+              "
+              media="(min-width:575px) and  (max-width:766px)" />
+            <source
+              srcset="
+                ./images/about/about-767@1x.png 1x,
+                ./images/about/about-767@2x.png 2x
+              "
+              media="(min-width:767px) and  (max-width:991px)" />
+            <source
+              srcset="
+                ./images/about/about-992@1x.png 1x,
+                ./images/about/about-992@2x.png 2x
+              "
+              media="(min-width:992px) and  (max-width:1399px)" />
+            <source
+              srcset="
+                ./images/about/about-1400@1x.png 1x,
+                ./images/about/about-1400@2x.png 2x
+              "
+              media="(min-width:1400px)" />
+            <img
+              class="about__image"
+              src="./images/about/about-1400@1x.png"
+              alt="The conquest of the top"
+          /></picture>
+          <p class="about__text">
+            The model offers a framework for discussing problems related to the
+            user's experience, as well as possible ways and means of solving
+            them. Application development begins at the top level (strategy),
+            where the future software product is described quite abstractly from
+            the point of view of the expectations of both users and the
+            customer.
+          </p>
+          <ul class="about__list">
+            <li class="about__item">
+              <p class="about__amount">800</p>
+              <p class="name">Pupils</p>
+            </li>
+            <li class="about__item">
+              <p class="about__amount">18</p>
+              <p class="name">Teachers</p>
+            </li>
+            <li class="about__item">
+              <p class="about__amount">6</p>
+              <p class="name">Foreign languages</p>
             </li>
           </ul>
         </div>
