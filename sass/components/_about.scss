@@ -1,16 +1,16 @@
 .about {
-  padding: 25px 0px 0px 0px;
+  padding: 25px 0px 25px 0px;
   @media screen and (min-width: 575px) {
-    padding: 42px 0px 0px 0px;
+    padding: 42px 0px 42px 0px;
   }
   @media screen and (min-width: 767px) {
-    padding: 26px 0px 0px 0px;
+    padding: 26px 0px 26px 0px;
   }
   @media screen and (min-width: 992px) {
-    padding: 53px 0px 0px 0px;
+    padding: 40px 0px 40px 0px;
   }
   @media screen and (min-width: 1400px) {
-    padding: 126px 0px 0px 0px;
+    padding: 90px 0px 60px 0px;
   }
 }
 
@@ -27,7 +27,30 @@
       "about__text . about__picture"
       "about__list . about__picture";
   }
+  @media screen and (min-width: 992px) {
+    grid-template-columns: 526px 1fr 336px;
+    grid-template-rows: 80px 1fr 80px;
+    gap: 30px 0px;
+    grid-template-areas:
+      "about__title . about__picture"
+      "about__text . about__picture"
+      "about__list . about__picture";
+  }
+  @media screen and (min-width: 1400px) {
+    grid-template-columns: 635px 1fr 500px;
+    grid-template-rows: 100px 1fr 150px;
+    gap: 30px 0px;
+    grid-template-areas:
+      "about__title . about__picture"
+      "about__text . about__picture"
+      "about__list . about__picture";
+  }
+  & > picture {
+    align-self: center;
+    grid-area: about__picture;
+  }
 }
+
 .about__title {
   @media screen and (min-width: 767px) {
     justify-self: start;
@@ -44,11 +67,6 @@
   @media screen and (min-width: 767px) {
     margin-bottom: 0;
   }
-}
-
-.about__container picture {
-  align-self: center;
-  grid-area: about__picture;
 }
 
 .about__text {
@@ -94,7 +112,7 @@
 .about__amount {
   color: $about-us-color;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   @media screen and (min-width: 767px) {
     font-size: 22px;

@@ -1,0 +1,137 @@
+.pricing {
+  padding: 25px 0px 25px 0px;
+  @media screen and (min-width: 575px) {
+    padding: 42px 0px 40px 0px;
+  }
+  @media screen and (min-width: 767px) {
+    padding: 26px 0px 25px 0px;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 40px 0px 50px 0px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding: 60px 0px 60px 0px;
+  }
+}
+
+.pricing__title {
+  margin-bottom: 25px;
+  @media screen and (min-width: 575px) and (max-width: 766px) {
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1400px) {
+    margin-bottom: 50px;
+  }
+}
+
+.pricing__text {
+  margin-bottom: 30px;
+  text-align: center;
+  @media screen and (min-width: 575px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 575px) and (max-width: 766px) {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 767px) {
+    margin-bottom: 23px;
+    text-align: left;
+    .pricing__item:nth-child(n + 2) & {
+      margin-bottom: auto;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1400px) {
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+}
+
+.pricing__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 170px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  font-size: 14px;
+  color: $price-color;
+  background-color: $pricing-background-color;
+  border-radius: 5px;
+  @media screen and (min-width: 575px) {
+    max-width: 200px;
+    font-size: 16px;
+    padding: 0px 16px;
+  }
+  @media screen and (min-width: 767px) {
+    margin: 0px;
+  }
+  @media screen and (min-width: 1400px) {
+    max-width: 240px;
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+}
+
+.pricing__value {
+  font-size: 18px;
+  color: $subtitle-color;
+  @media screen and (min-width: 575px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 575px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 30px;
+  }
+}
+
+.pricing__subtitle {
+  text-align: center;
+  @media screen and (min-width: 767px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+    max-width: 160px;
+  }
+}
+
+.pricing__image {
+  display: block;
+  margin: auto;
+}
+
+.pricing__items {
+  @media screen and (min-width: 767px) {
+    display: flex;
+  }
+}
+.pricing__item {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: calc((100% - 60px) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    flex-basis: calc((100% - 54px) / 3);
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    flex-basis: calc((100% - 80px) / 3);
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
