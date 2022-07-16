@@ -1,0 +1,179 @@
+.contact {
+  padding: 25px 0px 57px 0px;
+  @media screen and (min-width: 575px) {
+    padding: 40px 0px 144px 0px;
+  }
+  @media screen and (min-width: 767px) {
+    padding: 50px 0px 131px 0px;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 50px 0px 157px 0px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding: 90px 0px 133px 0px;
+  }
+}
+
+.contact__image {
+  display: block;
+  margin: 0px auto 30px;
+  @media screen and (min-width: 767px) {
+    margin-bottom: 0;
+  }
+}
+
+.contact__label {
+  font-size: 14px;
+  text-align: center;
+  @media screen and (min-width: 575px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    text-align: left;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 20px;
+  }
+}
+
+.contact__button {
+  max-width: 100%;
+  width: 100%;
+  padding: 16px 43px;
+  font-size: 16px;
+  @media screen and (min-width: 575px) {
+    padding: 16px 55px;
+    width: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  @media screen and (min-width: 767px) {
+    position: static;
+    padding: 13px 40px;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    padding: 16px 54px;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 20px;
+    padding: 23px 80px;
+  }
+}
+
+.contact__input {
+  height: 60px;
+  width: 100%;
+  margin: 0px 0px 17px 0px;
+  padding: 16px 41px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border: 1px solid $main-color;
+  border-radius: 5px;
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    @media screen and (min-width: 1400px) {
+      font-size: 18px;
+    }
+  }
+  &:focus {
+    border: 1px solid $title-color;
+    outline: none;
+  }
+  @media screen and (min-width: 575px) {
+    margin: 0px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 767px) {
+    margin: 0px 6px 0px 0px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  @media screen and (min-width: 992px) {
+    margin: 0px 14px 0px 0px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 1400px) {
+    margin: 0px 12px 0px 0px;
+    height: 80px;
+    width: 450px;
+    font-size: 20px;
+  }
+}
+
+.contact__input-wrap {
+  margin-top: 25px;
+  @media screen and (min-width: 575px) {
+    display: flex;
+    position: relative;
+    margin-top: 45px;
+  }
+  @media screen and (min-width: 767px) {
+    margin-top: 25px;
+  }
+  @media screen and (min-width: 992px) {
+    margin-top: 34px;
+  }
+  @media screen and (min-width: 1400px) {
+    margin-top: 52px;
+  }
+}
+
+.contact__container {
+  @media screen and (min-width: 767px) {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 233px 1fr;
+    grid-template-rows: 80px 1fr;
+    gap: 30px 38px;
+    grid-template-areas:
+      "contact__image contact__title"
+      "contact__image contact__form";
+  }
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: 312px 1fr;
+    gap: 30px 109px;
+  }
+  @media screen and (min-width: 1400px) {
+    grid-template-columns: 477px 1fr;
+    gap: 30px 111px;
+  }
+}
+
+.contact__title {
+  grid-area: contact__title;
+  @media screen and (min-width: 767px) {
+    margin: 0px;
+    text-align: left;
+  }
+}
+
+.contact__container picture {
+  align-self: end;
+  grid-area: contact__image;
+}
+
+.contact__form {
+  grid-area: contact__form;
+  @media screen and (min-width: 992px) {
+    padding-bottom: 50px;
+  }
+}

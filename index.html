@@ -51,20 +51,23 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#contact-us" class="header__link">Home</a>
+                <a href="./index.html" class="header__link">Home</a>
               </li>
               <li class="header__item">
-                <a href="#contact-us" class="header__link">Skills</a>
+                <a href="#skills" class="header__link">Skills</a>
               </li>
               <li class="header__item">
-                <a href="#contact-us" class="header__link">About Us</a>
+                <a href="#about" class="header__link">About Us</a>
               </li>
               <li class="header__item">
-                <a href="#contact-us" class="header__link">Prising</a>
+                <a href="#pricing" class="header__link">Pricing</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contacts</a>
               </li>
             </ul>
           </nav>
-          <a href="#contact-us" class="header__link--button">Let's Talk</a>
+          <a href="#contact" class="header__link--button">Let's Talk</a>
         </div>
       </div>
     </header>
@@ -118,7 +121,7 @@
           </div>
         </div>
       </section>
-      <section class="section skills">
+      <section class="section skills" id="skills">
         <div class="container skills__container">
           <h2 class="title">Skills</h2>
           <ul class="skills__items">
@@ -173,7 +176,7 @@
                   language learners.
                 </p>
 
-                <a href="$" class="button skills__button">Learn more</a>
+                <a href="#" class="button skills__button">Learn more</a>
               </div>
             </li>
 
@@ -221,7 +224,7 @@
                   science, the science that studies substances, also their
                   composition
                 </p>
-                <a href="$" class="button skills__button">Learn more</a>
+                <a href="#" class="button skills__button">Learn more</a>
               </div>
             </li>
 
@@ -268,7 +271,7 @@
                   perception and response actions of the user resulting from the
                   use and/or upcoming use of the product, system or service
                 </p>
-                <a href="$" class="button skills__button">Learn more</a>
+                <a href="#" class="button skills__button">Learn more</a>
               </div>
             </li>
 
@@ -315,13 +318,13 @@
                   Here you can find activities to practise your listening
                   skills. Listening will help you to improve your understanding
                 </p>
-                <a href="$" class="button skills__button">Learn more</a>
+                <a href="#" class="button skills__button">Learn more</a>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container about__container">
           <h2 class="title about__title">About Us</h2>
           <picture>
@@ -384,7 +387,7 @@
           </ul>
         </div>
       </section>
-      <section class="section pricing">
+      <section class="section pricing" id="pricing">
         <div class="container pricing__container">
           <h2 class="title pricing__title">Pricing</h2>
           <ul class="pricing__items">
@@ -530,8 +533,87 @@
           </ul>
         </div>
       </section>
+      <section class="section contact" id="contact">
+        <div class="container contact__container">
+          <h2 class="title contact__title">Contact Us</h2>
+          <picture>
+            <source
+              srcset="
+                ./images/contact/contact-320@1x.png 1x,
+                ./images/contact/contact-320@2x.png 2x
+              "
+              media="(max-width:574px)" />
+            <source
+              srcset="
+                ./images/contact/contact-575@1x.png 1x,
+                ./images/contact/contact-575@2x.png 2x
+              "
+              media="(min-width:575px) and  (max-width:766px)" />
+            <source
+              srcset="
+                ./images/contact/contact-767@1x.png 1x,
+                ./images/contact/contact-767@2x.png 2x
+              "
+              media="(min-width:767px) and  (max-width:991px)" />
+            <source
+              srcset="
+                ./images/contact/contact-992@1x.png 1x,
+                ./images/contact/contact-992@2x.png 2x
+              "
+              media="(min-width:992px) and  (max-width:1399px)" />
+            <source
+              srcset="
+                ./images/contact/contact-1400@1x.png 1x,
+                ./images/contact/contact-1400@2x.png 2x
+              "
+              media="(min-width:1400px)" />
+            <img
+              class="contact__image"
+              src="./images/contact/contact-1400@1x.png"
+              alt="A person sends a letter"
+          /></picture>
+
+          <form class="contact__form">
+            <label class="contact__label" for="user-email"
+              >Discover your current English level by taking our free online
+              English test. Sign up to our newsletter for learning tips and free
+              resource</label
+            >
+
+            <div class="contact__input-wrap">
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                id="user-email"
+                placeholder="Enter Your E-mail"
+              />
+              <button class="button contact__button" type="submit">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="./index.html" class="logo footer__logo"
+          >Brit<span class="logo__accent">lex</span></a
+        >
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Terms and Conditions</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Cookie Policy</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
