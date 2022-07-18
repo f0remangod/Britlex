@@ -16,6 +16,10 @@ ul {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   padding: 0px 15px;
   margin: auto;
@@ -100,6 +104,12 @@ ul {
   font-size: 30px;
   color: #263238;
   text-decoration: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 150ms linear;
+  transition: -webkit-transform 150ms linear;
+  transition: transform 150ms linear;
+  transition: transform 150ms linear, -webkit-transform 150ms linear;
 }
 @media screen and (min-width: 992px) {
   .header__link {
@@ -115,6 +125,11 @@ ul {
     padding-bottom: 70px;
   }
 }
+.header__link:hover, .header__link:focus {
+  text-decoration: underline;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
 
 .header__link--button {
   max-width: 223px;
@@ -124,6 +139,8 @@ ul {
   text-decoration: none;
   border: 2px solid #263238;
   border-radius: 5px;
+  -webkit-transition: color 150ms linear, background-color 150ms linear;
+  transition: color 150ms linear, background-color 150ms linear;
 }
 @media screen and (min-width: 992px) and (max-width: 1399px) {
   .header__link--button {
@@ -136,6 +153,10 @@ ul {
   .header__link--button {
     margin-left: 210px;
   }
+}
+.header__link--button:hover, .header__link--button:focus {
+  background-color: #263238;
+  color: #ffffff;
 }
 
 .header__list {
@@ -270,8 +291,16 @@ ul {
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+  border: 1px solid #263238;
   background-color: #263238;
   border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: color 150ms linear, background-color 150ms linear;
+  transition: color 150ms linear, background-color 150ms linear;
+}
+.button:hover, .button:focus {
+  background-color: #ffffff;
+  color: #263238;
 }
 
 .hero__button {
@@ -412,6 +441,9 @@ ul {
   }
 }
 
+.hero__wrapper {
+  position: relative;
+}
 @media screen and (min-width: 767px) {
   .hero__wrapper {
     max-width: 333px;
@@ -425,6 +457,33 @@ ul {
 @media screen and (min-width: 1400px) {
   .hero__wrapper {
     max-width: 500px;
+  }
+}
+
+.hero__icon {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .hero__icon {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__icon {
+    width: 90px;
+    top: 18px;
+    left: 320px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__icon {
+    position: absolute;
+    width: 110px;
+    top: 50px;
+    left: 400px;
   }
 }
 
