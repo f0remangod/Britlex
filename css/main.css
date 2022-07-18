@@ -1210,6 +1210,7 @@ html {
 .contact__button {
   max-width: 100%;
   width: 100%;
+  height: 60px;
   padding: 16px 43px;
   font-size: 16px;
 }
@@ -1226,6 +1227,7 @@ html {
 @media screen and (min-width: 767px) {
   .contact__button {
     position: static;
+    height: 50px;
     padding: 13px 40px;
     font-size: 13px;
     border-radius: 5px;
@@ -1233,8 +1235,9 @@ html {
 }
 @media screen and (min-width: 992px) {
   .contact__button {
-    font-size: 16px;
+    height: 60px;
     padding: 16px 54px;
+    font-size: 16px;
     border-radius: 10px;
   }
 }
