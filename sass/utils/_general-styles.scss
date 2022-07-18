@@ -3,6 +3,11 @@ body {
   color: $main-color;
   font-size: 13px;
   line-height: 1.5;
+  &.menu-open {
+    @media screen and (max-width: 991px) {
+      overflow: hidden;
+    }
+  }
 }
 
 h1,
@@ -17,4 +22,10 @@ ul {
 
 html {
   scroll-behavior: smooth;
+}
+
+img {
+  @media screen and (max-width: 319px) {
+    width: 100%;
+  }
 }

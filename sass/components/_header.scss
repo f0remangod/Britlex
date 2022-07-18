@@ -20,11 +20,34 @@
   align-items: center;
   justify-content: center;
   padding: 0;
+  margin: 0;
 
   background-color: transparent;
   border: none;
 
   @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+.menu-btn__icon {
+  fill: $subtitle-color;
+  transition: fill 250ms $timing-function;
+  &:hover,
+  &:focus {
+    fill: $title-color;
+  }
+}
+
+.menu-btn__cross {
+  display: none;
+  .menu-btn.is-open & {
+    display: block;
+  }
+}
+
+.menu-btn__burger {
+  .menu-btn.is-open & {
     display: none;
   }
 }
@@ -105,62 +128,46 @@
 }
 
 .header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu-btn__icon {
-  fill: $subtitle-color;
-  transition: fill 250ms $timing-function;
-  &:hover,
-  &:focus {
-    fill: $title-color;
-  }
-  .menu-btn.is-open & {
-    display: block;
-    position: fixed;
-    z-index: 69;
-    right: 15px;
-    top: 10px;
-  }
-}
-
-.menu-btn__cross {
-  display: none;
-  .menu-btn.is-open & {
-    display: block;
-  }
-}
-
-.menu-btn__burger {
-  .menu-btn.is-open & {
-    display: none;
-  }
-}
-
 .header__menu {
-  // background-color: tomato;
+  background-color: white;
+
   @media screen and (max-width: 991px) {
     display: none;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: calc((100% + 15px));
     left: 0;
     z-index: 33;
+    overflow-y: scroll;
     width: 100%;
-    height: 100%;
-    padding: 48px 0px 48px 40px;
+    height: calc(100vh - 70px);
+    padding: 48px 0px 88px 40px;
+    opacity: 1;
+    transition: opacity 250ms linear;
 
     &.is-open {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      opacity: 0.97;
     }
   }
+
+  @media screen and (min-width: 575px) and (max-width: 991px) {
+    top: calc(100% + 27.5px);
+    height: calc(100vh - 100px);
+  }
+
   @media screen and (min-width: 992px) {
     display: flex;
+    flex-direction: row;
     align-items: center;
-  }
-  @media screen and (min-width: 1400px) {
+    height: 100%;
+    width: auto;
   }
 }
